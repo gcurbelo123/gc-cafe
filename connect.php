@@ -5,7 +5,7 @@ function getDBConnection() {
     //C9 db info
     $host = "localhost";
     $dbName = "cafe";
-    $username = "gcurbelo";
+    $username = getenv("C9_USER");
     $password = "";
     
     //when connecting from Heroku
