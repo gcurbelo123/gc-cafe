@@ -20,7 +20,7 @@ function displayCart() {
             $orderTime = $item['time'];
             
             echo "<tr>";
-            echo "<td align = 'center' valign = 'middle'>$itemName</td>";
+            echo "<td align = 'center' valign = 'middle' id = 'item'>$itemName</td>";
             
             echo "<form method = 'post'>";
             echo "<input type = 'hidden' name = 'itemName' value = '$itemName'>";
@@ -43,7 +43,7 @@ function displayCart() {
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Trocchi" rel="stylesheet">
     </head>
     <body>
-        <h1>Shopping Cart</h1>
+        <h1>Order So Far</h1>
         <!-- Cart Items -->
         <?php
             displayCart();

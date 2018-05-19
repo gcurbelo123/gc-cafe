@@ -25,9 +25,9 @@ function showFood(){
         $foodId = $food['drink_id'];
         
         echo "<tr>";
-        echo "<td><img src = '$foodImage' width = '100px' height = '100px' padding-right = '200px'></td>";
-        echo "<td><h4>$foodName</h4></td>";
-        echo "<td><h4>$foodPrice</h4></td>";
+        echo "<td><img src = '$foodImage' width = '150px' height = '150px' padding-right = '200px'></td>";
+        echo "<td id = 'item'><h4>$foodName</h4></td>";
+        echo "<td id = 'item'><h4>$foodPrice</h4></td>";
         
         echo "<form method = 'post'>";
         echo "<input type = 'hidden' name = 'itemName' value = '$foodName'>";

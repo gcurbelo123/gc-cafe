@@ -21,7 +21,7 @@ function displayMenu(){
     <body>
         <?=displayMenu()?>
         <header id = "name">
-            <h1> Gilbert's Menu </h1>
+            <h1> Add Food </h1>
         </header>
         <hr width = "0%"/>
         <div id = "content">
