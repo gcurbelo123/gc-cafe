@@ -17,7 +17,7 @@ if(isset($_POST['drinkName'])){
     $drink = $stmt->fetch(PDO::FETCH_ASSOC);
     
     if(empty($drink)){
-        $sql = "INSERT INTO drinks (drink_id, name, price, image_url) VALUES (NULL, :drinkName, :drinkPrice, :drinkImage)";
+        $sql = "INSERT INTO drinks (name, price, image_url) VALUES (:drinkName, :drinkPrice, :drinkImage)";
         $stmt = $connect->prepare($sql);
         $data = array(":drinkName" => $_POST['drinkName'],
                 ":drinkPrice" => $_POST['drinkPrice'],
@@ -46,7 +46,7 @@ if(isset($_POST['foodName'])){
     $food = $stmt->fetch(PDO::FETCH_ASSOC);
     
     if(empty($food)){
-        $sql = "INSERT INTO food (food_id, name, price, image_url) VALUES (NULL, :foodName, :foodPrice, :foodImage)";
+        $sql = "INSERT INTO food (name, price, image_url) VALUES (:foodName, :foodPrice, :foodImage)";
         $stmt = $connect->prepare($sql);
         $data = array(":foodName" => $_POST['foodName'],
                 ":foodPrice" => $_POST['foodPrice'],
