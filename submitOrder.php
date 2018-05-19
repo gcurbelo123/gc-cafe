@@ -8,7 +8,7 @@ if(isset($_SESSION['cart'])){
     
     foreach($_SESSION['cart'] as $item){
         date_default_timezone_set("America/Los_Angeles");
-        $sql = "INSERT INTO orders (orderNum, customer, item, date, time) VALUES (NULL, :customer, :item, :date, :time)";
+        $sql = "INSERT INTO orders (customer, item, date, time) VALUES (:customer, :item, :date, :time)";
         $stmt = $connect->prepare($sql);
         $data = array(":customer" => $_SESSION['username'],
                       ":item" => $item['item'],
