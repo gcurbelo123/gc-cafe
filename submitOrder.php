@@ -7,6 +7,7 @@ $connect = getDBConnection();
 if(isset($_SESSION['cart'])){
     
     foreach($_SESSION['cart'] as $item){
+        date_default_timezone_set("America/Los_Angeles");
         $sql = "INSERT INTO orders (orderNum, customer, item, date, time) VALUES (NULL, :customer, :item, :date, :time)";
         $stmt = $connect->prepare($sql);
         $data = array(":customer" => $_SESSION['username'],
