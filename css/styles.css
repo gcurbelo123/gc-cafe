@@ -1,0 +1,237 @@
+body {
+    font-family: Calibri;
+    font-size: 1.15em;
+    text-align: center;
+    background: #76b852;
+}
+
+h1 {
+    font-family: Calibri;
+    background: #76b852;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 6em;
+}
+
+nav {
+    padding-bottom: 50px;
+}
+#links {
+    display: inline;
+    padding-right: 30px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 3em;
+    width: 100px;
+    text-decoration: none; /* removes underline */
+    color: green;
+    border-top: 2px grey solid;
+}
+
+nav a:hover {
+    border-bottom:2px grey solid;
+    font-size: 3em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.answer {
+    background-color: yellow;
+    margin: 5px;
+}
+
+.correct { /* For Correct Answers */
+    color: green;
+}
+ 
+.incorrect { /* For Incorrect Answers */
+    color: red;
+}
+
+#feedback {
+    display: none;  /*Hides feedback when accessing quiz */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Content Wrapper for everything under user menu*/ 
+.content-wrapper {
+    top: 100px;
+    position: relative;
+    width:850px;
+    margin:0 auto;
+    text-align: left;
+}
+
+/* User Fixed Menu When Logged In*/
+.user-menu {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+#welcomeText1 {
+    padding-top: 25px;
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+#welcomeText2 {
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+#welcomeText3 {
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+
+#showContainer {
+  /* Main wrapper for all images */
+  width: 670px;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.navButton {
+  /* Make buttons look nice */ 
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 22px;
+  padding: 10px;
+  margin-right: 5px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background: #000000;
+  opacity: 0.65;
+  user-select: none;
+}
+.navButton:hover {
+  opacity: 1;
+}
+.caption {
+  float: right;
+}
+.imageContainer:not(:first-child) {
+  /* Hide all images except the first */
+  display: none;
+}
+
+.my-button {
+    display: inline-block;
+    margin: 5px;
+    background: #b06f97;
+    color: #333;
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    font-style: italic;
+    border-radius: 50px;
+    padding: 8px 16px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.my-button:hover {
+    background: #666;
+    color: #c1e1e0;
+}
+
+#content {
+    text-align: center;
+}
+
+#imgButton {
+    text-align: center;
+}
+
+h2 {
+   position:absolute;
+   top:0;
+   right:50px;
+}
+
+#back {
+    font-family: Calibri;
+    font: bold;
+    font-size: 1.5em;
+    position: absolute;
+    top:50px;
+    left:50px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#addDrink {
+    font-family: Calibri;
+    font: bold;
+    font-size: 1.5em;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+#logoutBtn {
+    font-family: Calibri;
+    font: bold;
+    font-size: 0.75em;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+#order {
+    font-family: Calibri;
+    font: bold;
+    font-size: 1.5em;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+#clear {
+    font-family: Calibri;
+    font: bold;
+    font-size: 1.5em;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-warning {
+    font-family: Calibri;
+    font: bold;
+    font-size: 1.5em;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+}
